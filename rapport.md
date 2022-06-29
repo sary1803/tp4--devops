@@ -125,4 +125,10 @@ sudo chmod 600 id_rsa
 ##  commande test 
 ```
 ssh -i id_rsa devops@20.111.12.44 cat /etc/os-release
+
 ```
+## Terraform vs CLI
+Terraform permet de créer, modifier et administrer les ressources facilement et automatiquement avec le code, en évitant le travail manuel. on dispose ainsi d'un code qu'on peut utiliser pour deployer des ressources identiques à chaque fois. cela là n'est oas possible sur le cli ou l'interface utilisateur où l'on doit à chaque fois regler les parametres.
+
+## ACI vs AVM
+l'azure virtual machine crée une machine bien isolée niveau sécurité contrairement à l'azure contener instance qui permet d'executer une application sur une machine hôte. on peut cependant augmenter la sécurité sur une ACI. Il est mieux d'utiliser une ACI ( financier, architecture) si on veut uniquement déployer une application
